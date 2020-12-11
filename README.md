@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Example
 
-[在线live](https://github.com/angular/angular-cli)
+[在线live](https://lucylucy-xia.github.io/RouteReuseStrategy-demo)
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
