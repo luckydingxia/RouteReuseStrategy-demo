@@ -1,0 +1,9 @@
+<!-- NG-ZORRO -->
+<ul [nzTheme]="'dark'" nz-menu nzMode="horizontal">
+    <li nz-menu-item
+        *ngFor="let item of menus"
+        routerLinkActive="ant-menu-item-selected"
+        routerLink="{{item.url}}">{{item.name}}</li>
+</ul>
+
+<router-outlet></router-outlet>
