@@ -72,6 +72,7 @@ export class MainContainerComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.destory$.next();
     this.destory$.complete();
+    SimpleReuseStrategy.deleteAllRouteCache();
   }
 
 }
