@@ -42,12 +42,11 @@ export class MainContainerComponent implements OnInit, OnDestroy {
     this.service.getTab().pipe(
       takeUntil(this.destory$)
     ).subscribe((tab: tabItem) => {
-      console.log(tab);
       const existIndex = this.tabs.findIndex((item: tabItem) =>  item.url === tab.url );
       if (existIndex !== -1) {
         this.toDetail(existIndex);
       } else {
-        if (this.tabs.length >= 10) {
+        if (this.tabs.length >= 11) {
           this.message.info('最多只可以打开10个详情哦！');
           return;
         }
